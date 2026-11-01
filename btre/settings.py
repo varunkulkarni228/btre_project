@@ -133,23 +133,6 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-
-# Email
-# https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
-
-MAILERS = {
-    'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
-    },
-    "OPTIONS": {
-        "host": "smtp.gmail.com",
-        "use_tls": True,
-        # Note: port defaults to 587 if use_tls is True, or specify "port": 587
-        "username": "traversy.brad@gmail.com",
-        "password": "123456",
-    },
-}
-
 #Messages
 from django.contrib.messages import constants as messages
 
